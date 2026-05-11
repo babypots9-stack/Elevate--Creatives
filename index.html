@@ -491,26 +491,21 @@
                     <!-- Right: Form -->
                     <div class="glass-card p-6 md:p-8 rounded-2xl">
                         <form action="https://formspree.io/f/maqvadbl" method="POST" class="space-y-4">
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                <div class="space-y-1">
-                                    <label class="text-xs text-gray-400 font-medium">First Name</label>
-                                    <input type="text" required class="w-full bg-dark border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary transition" placeholder="John">
-                                </div>
-                                <div class="space-y-1">
-                                    <label class="text-xs text-gray-400 font-medium">Last Name</label>
-                                    <input type="text" required class="w-full bg-dark border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary transition" placeholder="Doe">
-                                </div>
-                            </div>
-                            <div class="space-y-1">
-                                <label class="text-xs text-gray-400 font-medium">Email Address</label>
-                                <input type="email" required class="w-full bg-dark border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary transition" placeholder="john@company.com">
-                            </div>
-                            <div class="space-y-1">
-                                <label class="text-xs text-gray-400 font-medium">Project Details</label>
-                                <textarea required rows="4" class="w-full bg-dark border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary transition resize-none" placeholder="Tell us about your project..."></textarea>
-                            </div>
-                            <button type="submit" class="w-full btn-primary text-white font-bold py-4 rounded-lg mt-2">Send Message <i class="fa-solid fa-paper-plane ml-2"></i></button>
-                        </form>
+    <div class="space-y-1">
+        <label class="text-xs text-gray-400 font-medium">Full Name</label>
+        <input type="text" name="name" required class="w-full bg-dark border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary transition" placeholder="John Doe">
+    </div>
+    <div class="space-y-1">
+        <label class="text-xs text-gray-400 font-medium">Email Address</label>
+        <input type="email" name="email" required class="w-full bg-dark border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary transition" placeholder="john@company.com">
+    </div>
+    <div class="space-y-1">
+        <label class="text-xs text-gray-400 font-medium">Project Details</label>
+        <textarea name="message" required rows="4" class="w-full bg-dark border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary transition resize-none" placeholder="Tell us about your project..."></textarea>
+    </div>
+    <button type="submit" class="w-full btn-primary text-white font-bold py-4 rounded-lg mt-2">Send Message <i class="fa-solid fa-paper-plane ml-2"></i></button>
+</form>
+
                     </div>
                 </div>
             </div>
